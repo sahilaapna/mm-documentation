@@ -1,0 +1,8 @@
+{
+  "label": "Support Center",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "support/support-index"
+  }
+} 

@@ -1,0 +1,8 @@
+.navbarSearchWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.navbarSearchBar {
+  margin-left: 1rem;
+} 

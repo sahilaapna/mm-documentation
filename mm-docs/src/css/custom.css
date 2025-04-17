@@ -1,0 +1,354 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Layout for text next to a right-aligned image using CSS Grid */
+.grid-container-text-left-image-right {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  grid-gap: 25px;
+  align-items: start;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 768px) {
+  .grid-container-text-left-image-right {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .grid-text-content {
+    grid-row: 2;
+  }
+
+  .grid-image-wrapper {
+    grid-row: 1;
+    grid-column: 1;
+    margin-bottom: 15px;
+  }
+}
+
+.grid-text-content {
+  /* Ensure text flows naturally */
+  grid-column: 1 / 2;
+}
+
+.grid-image-wrapper {
+  grid-column: 2 / 3;
+  text-align: center; /* Center image within its column */
+}
+
+/* Enhanced image styling */
+.grid-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.grid-image-wrapper img:hover {
+  transform: scale(1.02);
+}
+
+/* Enhanced caption style */
+.img-caption {
+  display: block;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 12px;
+  color: var(--ifm-color-content-secondary);
+  padding: 8px;
+  border-radius: 4px;
+  background: var(--ifm-background-color);
+}
+
+/* REMOVED: Ensure headings and admonitions clear floats above them */
+/* 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.admonition {
+  clear: both;
+}
+*/
+
+/* Enhanced tab styling */
+.tabs-container {
+  margin: 2rem 0;
+}
+
+[data-theme='light'] .tabs {
+  background: var(--ifm-background-surface-color);
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .tabs {
+  background: var(--ifm-background-surface-color);
+  border-radius: 8px 8px 0 0;
+}
+
+/* Admonition enhancements */
+.admonition {
+  border-width: 0;
+  border-left-width: 6px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin: 1.5rem 0;
+}
+
+/* Section headers enhancement */
+h2 {
+  border-bottom: 2px solid var(--ifm-color-primary);
+  padding-bottom: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+/* List styling enhancement */
+.grid-text-content ul {
+  padding-left: 1.2rem;
+}
+
+.grid-text-content ul li {
+  margin: 0.5rem 0;
+  position: relative;
+}
+
+/* Custom search bar styling */
+.navbar__search {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__search-input {
+  position: relative;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  width: 8rem;
+}
+
+.navbar__search-input:focus {
+  width: 12rem;
+}
+
+/* Search page styling */
+.search-page-wrapper {
+  padding: 2rem 0;
+}
+
+.search-page-form {
+  margin-bottom: 2rem;
+}
+
+.search-page-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 1rem;
+  border-right: none;
+  outline: none;
+}
+
+.search-page-input:focus {
+  border-color: var(--ifm-color-primary);
+}
+
+.search-results-count {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.search-result-item {
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  background-color: var(--ifm-background-surface-color);
+}
+
+.search-result-item:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.search-result-title {
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary);
+  font-size: 1.2rem;
+}
+
+.search-result-title a {
+  text-decoration: none;
+}
+
+.search-result-title a:hover {
+  text-decoration: underline;
+}
+
+.search-result-section {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.8rem;
+}
+
+.search-result-snippet {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  color: var(--ifm-font-color-base);
+}
+
+.search-result-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.search-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}
+
+.search-loading {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.search-no-results {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.search-no-results p:first-child {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.search-no-results p:last-child {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.search-instructions {
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.search-instructions h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.search-instructions ul {
+  margin-bottom: 0;
+}
+
+.search-instructions li {
+  margin-bottom: 0.5rem;
+}
+
+/* Highlighted search text */
+mark {
+  background-color: rgba(46, 133, 85, 0.2);
+  color: inherit;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+/* Dark mode mark */
+[data-theme='dark'] mark {
+  background-color: rgba(37, 194, 160, 0.2);
+}
+
+/* Navbar search link styling */
+.navbar-search-link {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search-link:before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath fill='%23666' d='M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Dark mode adjustments */
+html[data-theme='dark'] .navbar-search-link:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath fill='%23eee' d='M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* Algolia DocSearch overrides */
+.DocSearch-Button {
+  margin: 0;
+  height: 32px;
+  padding: 0 12px;
+}
+
+.DocSearch-Button-Placeholder {
+  font-size: 0.9rem;
+}
