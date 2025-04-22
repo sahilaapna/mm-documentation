@@ -1,9 +1,0 @@
-pages:
-  stage: deploy
-  script:
-    - echo 'Nothing to do, pages are already built'
-  artifacts:
-    paths:
-      - .
-  only:
-    - gh-pages 
