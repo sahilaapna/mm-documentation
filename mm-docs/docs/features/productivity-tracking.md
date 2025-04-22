@@ -6,107 +6,43 @@ sidebar_position: 2
 
 # Productivity Tracking
 
-Mera Monitor's productivity tracking feature helps organizations understand and optimize how their teams spend their work time. This comprehensive system monitors application usage, website activity, and work patterns to provide detailed insights into team productivity.
+Mera Monitor's productivity tracking feature helps organizations understand how time is spent by classifying website and application usage as productive or unproductive. Administrators configure these classifications, which directly impact the productivity metrics displayed throughout the system.
 
-## Activity Classification
+## Configuring Productive/Unproductive Activities
 
-The system categorizes activities into two main types:
+Administrators define what constitutes productive or unproductive activity for the organization, specific departments, or individual users.
 
-### Productive Activities
-- Project management software
-- Data analysis tools
-- Communication platforms
-- Development environments
-- Design tools
-- Documentation systems
+![Configure Productive Apps/URLs](/img/productivity-config-apps-urls.png)
 
-### Unproductive Activities
-- Non-work-related social media
-- Entertainment websites
-- Gaming applications
-- Personal email
-- Non-business streaming services
+**Steps for Configuration:**
 
-## Productivity Analytics
+1.  **Select Category:** Choose whether to configure **Websites** or **Applications** using the tabs.
+2.  **Select Scope:** Define the level at which the rule applies:
+    *   **Organization:** Applies to everyone in the company.
+    *   **Department:** Applies only to users within selected departments.
+    *   **User:** Applies only to specific individuals.
+3.  **Choose Classification:** Use the top dropdown (e.g., showing "Productive") to select whether you are defining **Productive** or **Unproductive** items.
+4.  **Identify Items:**
+    *   The system may automatically list detected websites/applications in the left-hand "Add to..." column.
+    *   Use the **Search by URL/Application Name** fields to find specific items.
+5.  **Assign Classification:**
+    *   Check the boxes next to the websites/applications in the left column.
+    *   Click **Submit** to move the selected items to the right-hand column, classifying them as Productive (or Unproductive, depending on your selection in step 3).
+6.  **Remove Classification:**
+    *   To remove an item from the Productive/Unproductive list, check the box next to it in the right-hand column.
+    *   Click **Remove**.
 
-### Graphical Representations
-- Bar graphs showing productive vs. unproductive time ratios
-- Time-based trends and patterns
-- Department-wise productivity comparisons
-- Individual performance metrics
+_Note: An application or website cannot be classified as both Productive and Unproductive simultaneously at the same scope level._
 
-### Performance Rankings
-- **Top 3 Performers**: Users with highest productive time allocation
-- **Bottom 3 Underperformers**: Users needing productivity improvement
-- **Team Rankings**: Department and team-level performance metrics
+## Viewing Productivity Results
 
-### Usage Analytics
-- **Top 5 Websites**: Most frequently accessed work-related sites
-- **Top 5 Applications**: Most commonly used work tools
-- **Time Distribution**: Breakdown of time spent on different activities
+Once configured, Mera Monitor uses these classifications to calculate productivity metrics displayed in various sections:
 
-## Activity Monitoring
+*   **Dashboard Widgets:** The "Productive vs Unproductive Graph" and the "Top Productive" / "Less Productive" rankings directly reflect the time spent on classified activities.
 
-### Screen Activity Tracking
-- Application usage monitoring
-- Website visit tracking
-- Active window detection
-- Time spent per application/website
+    ![Productivity Graph and Rankings](/img/productivity-graph-rankings.png)
 
-### Keyboard and Mouse Activity
-- Keystroke monitoring
-- Mouse click tracking
-- Activity patterns analysis
-- Idle time detection
+*   **Reports:** Detailed reports will show breakdowns of time spent on productive and unproductive tasks based on these settings.
+*   **Live Tracking & User Views:** Individual user views and live tracking data will often indicate whether current activity is classified as productive or unproductive.
 
-### Time Tracking
-- Active work hours
-- Break time monitoring
-- Overtime tracking
-- Attendance correlation
-
-## Productivity Reports
-
-### Daily Reports
-- Individual productivity metrics
-- Team performance overview
-- Activity breakdown
-- Productivity trends
-
-### Weekly Reports
-- Performance comparisons
-- Productivity patterns
-- Improvement areas
-- Achievement tracking
-
-### Monthly Reports
-- Long-term trends
-- Department performance
-- Productivity goals
-- ROI analysis
-
-## Best Practices
-
-### For Administrators
-1. **Regular Review**: Monitor productivity reports daily
-2. **Goal Setting**: Establish clear productivity targets
-3. **Team Communication**: Share insights with team members
-4. **Tool Optimization**: Identify and promote productive tools
-5. **Training**: Provide guidance on productivity improvement
-
-### For Team Members
-1. **Self-Monitoring**: Review personal productivity metrics
-2. **Time Management**: Use insights to improve work patterns
-3. **Tool Usage**: Focus on approved productivity tools
-4. **Break Management**: Take regular, scheduled breaks
-5. **Goal Alignment**: Align activities with team objectives
-
-## Privacy Considerations
-
-Mera Monitor respects user privacy while maintaining productivity tracking:
-
-- **Blurred Screenshots**: Sensitive information is automatically blurred
-- **Private Mode**: Option to temporarily pause monitoring
-- **Data Protection**: Secure storage and transmission
-- **Access Control**: Role-based access to monitoring data
-- **Compliance**: Adherence to privacy regulations 
+Regularly reviewing and updating these classifications ensures that productivity metrics accurately reflect your organization's goals and workflows. 

@@ -39,14 +39,7 @@ const sidebars = {
       items: [
         'features/dashboard-overview',
         'features/features-attendance',
-        {
-          type: 'category',
-          label: 'Productivity Tracking',
-          items: [
-            'productivity-tracking/productivity-tracking-classification',
-            'productivity-tracking/productivity-tracking-analytics',
-          ],
-        },
+        'features/productivity-tracking',
       ],
       collapsed: false,
     },

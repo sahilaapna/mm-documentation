@@ -26,9 +26,9 @@ The dashboard is organized into several key sections:
 ### 1. Header and Navigation
 
 Located at the very top, this area includes:
-- **Greeting & Date**: Welcomes the logged-in user (e.g., "Hi Admin, Good Afternoon") and shows the current date.
+- **Greeting & Date**: Welcomes the logged-in user (e.g., "Hi Daniel Moore - Admin, Good Afternoon") and shows the current date (e.g., "16th April, 2025").
 - **View Modes**: Buttons to switch between **Organization View**, **Team View**, and **Individual View**, allowing data analysis at different levels.
-- **Date Range Selector**: Allows filtering the dashboard data for specific periods (e.g., "2025-03-29 → 2025-04-04").
+- **Date Range Selector**: Allows filtering the dashboard data for specific periods (e.g., "2025-04-10 → 2025-04-16").
 - **Profile Access**: Typically includes the user's profile picture or initials, providing access to profile settings and logout options.
 
 ### 2. Sidebar Menu
@@ -49,7 +49,7 @@ This section provides a snapshot of the current workforce status:
 
 <div class="metrics-grid">
   <div class="metric-card total">
-    <h3>35</h3>
+    <h3>13</h3>
     <p>Total Members</p>
     <span class="icon">👥</span>
     <small>Represents the total number of users configured in the system within the current view (Organization/Team).</small>
@@ -61,7 +61,7 @@ This section provides a snapshot of the current workforce status:
     <small>Shows the count of members currently active and being tracked by the desktop agent. (Shows "No Active Members" if zero).</small>
   </div>
   <div class="metric-card offline">
-    <h3>35</h3>
+    <h3>13</h3>
     <p>Offline Members</p>
     <span class="icon">⭘</span>
     <small>Indicates the number of members who are currently not active or logged out.</small>
@@ -77,7 +77,7 @@ Adjacent to the Live Data, this section summarizes key time-based productivity i
     <span class="icon">⏱️</span>
     <div class="details">
       <h4>Total Active Hours</h4>
-      <p class="time">--:--:-- hrs</p>
+      <p className="time" style={{color: 'black'}}>281:42:22 hrs</p>
       <small>Total duration users were logged in and actively using their computers.</small>
     </div>
   </div>
@@ -85,7 +85,7 @@ Adjacent to the Live Data, this section summarizes key time-based productivity i
     <span class="icon">📈</span>
     <div class="details">
       <h4>Total Productive Hours</h4>
-      <p class="time">--:--:-- hrs</p>
+      <p className="time" style={{color: 'black'}}>100:35:26 hrs</p>
       <small>Time spent on applications and websites categorized as productive.</small>
     </div>
   </div>
@@ -93,7 +93,7 @@ Adjacent to the Live Data, this section summarizes key time-based productivity i
     <span class="icon">📉</span>
     <div class="details">
       <h4>Total Unproductive Hours</h4>
-      <p class="time">--:--:-- hrs</p>
+      <p className="time" style={{color: 'black'}}>181:06:56 hrs</p>
       <small>Time spent on applications and websites categorized as unproductive.</small>
     </div>
   </div>
@@ -102,32 +102,48 @@ Adjacent to the Live Data, this section summarizes key time-based productivity i
 ### 6. Performance Analysis Section
 
 This area provides deeper insights into productivity trends:
-- **Productive vs Unproductive Graph**: (Shows "No Active Data - Download to get started" when no data is available) Typically displays a visual comparison (e.g., bar or line chart) of productive and unproductive time over the selected period.
-- **Top Productive**: (Shows "No Active Data") Lists members who have demonstrated the highest levels of productive activity.
-- **Less Productive**: (Shows "No Active Data") Lists members with lower levels of productive activity, potentially indicating areas for support.
+- **Productive vs Unproductive Graph**: Displays a visual comparison (line chart with area fill) of productive (green line) and unproductive (red line) time over the selected period (e.g., 10th Apr - 16th Apr). Shows hours on the Y-axis and dates on the X-axis. Navigation arrows allow scrolling through the date range.
+- **Top Productive**: Lists members with the highest productive activity. Example:
+    - Li Wang (Release Management)
+    - Alexander Petrov (Development)
+    - Sarah Jones (Development)
+- **Less Productive**: Lists members with lower levels of productive activity. Example:
+    - Emily Garcia - Floor Manager (QA)
+    - Daniel Moore - Admin
+    - William Anderson (With ss) (QA)
 
 ### 7. Web & Apps Usage Overview
 
-Provides insights into digital tool usage:
+Provides insights into digital tool usage through donut charts and lists:
 
 <div class="monitoring-section">
   <div class="monitoring-card">
     <h3>Websites</h3>
-    <p>(Shows "No Active Data") Displays the most frequently visited websites by users.</p>
+    <p>Displays the most frequently visited websites by users, showing percentage and total time. Example:</p>
+    <ul>
+      <li>https://try.decisions.com: 11:39:49 (27.6%)</li>
+      <li>http://linkedin.com: 09:42:20 (13.0%)</li>
+      <li>http://remote.aapnainfotech.com: 08:30:44 (20.1%)</li>
+      <li>http://chatgpt.com: 06:55:47 (16.4%)</li>
+    </ul>
   </div>
   <div class="monitoring-card">
     <h3>Applications</h3>
-    <p>(Shows "No Active Data") Shows the most used applications across the team/organization.</p>
+    <p>Shows the most used applications across the team/organization, showing percentage and total time. Example:</p>
+    <ul>
+      <li>ms-teams.exe: 52:01:12 (39.6%)</li>
+      <li>chrome.exe: 32:59:28 (25.1%)</li>
+      <li>Code.exe: 18:18:16 (12.6%)</li>
+      <li>OUTLOOK.EXE: 16:35:37 (13.9%)</li>
+    </ul>
   </div>
 </div>
 
 ### 8. Attendance Overview
 
 Visualizes attendance patterns for the last 7 days:
-- **Chart**: A bar chart showing the daily count of users.
-- **Legend**: Differentiates between members marked as "Present" and those "On Leave".
-- **Axis**: The Y-axis represents the "User Count", and the X-axis shows the dates for the past seven days.
-- **Navigation**: Arrows (← →) allow viewing previous or next periods if applicable.
+- **Chart**: A bar chart showing the daily count of users. For the period 10th Apr to 16th Apr, it shows roughly 13 users present each day, with one user marked "On Leave" on 15th Apr.
+- **Legend**: Differentiates between members marked as "Present" (green bars) and those "On Leave" (red bars).
 
 <style>
 {`

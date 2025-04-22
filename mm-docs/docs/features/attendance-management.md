@@ -1,120 +1,71 @@
 ---
-id: attendance-management
+id: features-attendance
 title: Attendance Management
 sidebar_position: 3
 ---
 
 # Attendance Management
 
-Mera Monitor's attendance management system provides comprehensive tracking and reporting of employee attendance patterns, helping organizations maintain accountability and optimize workforce management.
+Mera Monitor provides a detailed Attendance Management module to track employee presence, leaves, and logged hours. The interface offers different views tailored to the roles within your organization.
 
-## Attendance Tracking
+## Navigating Attendance Views
 
-### Clock In/Out System
-- **Automatic Detection**: System automatically detects when users start and end their workday
-- **Manual Override**: Option for manual clock in/out when needed
-- **Location Tracking**: GPS-based attendance verification (optional)
-- **Device Recognition**: Multi-device support for attendance tracking
+Located at the top of the Attendance section, you can switch between different perspectives:
 
-### Break Management
-- **Scheduled Breaks**: Track lunch and other scheduled breaks
-- **Break Types**: Categorize different types of breaks (lunch, coffee, personal)
-- **Break Duration**: Monitor break lengths and patterns
-- **Break Alerts**: Notifications for extended or unauthorized breaks
+*   **Organization View:** (Available to Admins) Provides a comprehensive overview of attendance across the entire company.
+*   **Team View:** (Available to Admins and Managers) Shows attendance data specifically for the teams managed by the user.
+*   **Individual View:** Shows detailed attendance for a single user. Accessible by Admins/Managers selecting a user, or by individual members viewing their own data.
 
-### Overtime Tracking
-- **Automatic Calculation**: System calculates overtime hours
-- **Overtime Approval**: Workflow for overtime approval
-- **Overtime Reports**: Detailed overtime analysis
-- **Compliance Monitoring**: Ensure adherence to labor laws
+## Organization / Team View (Admin/Manager)
 
-## Attendance Reports
+This view gives managers and administrators a consolidated look at their team's or the entire organization's attendance summary over a selected period.
 
-### Daily Reports
-- Individual attendance records
-- Late arrivals and early departures
-- Break patterns
-- Overtime hours
+![Attendance - Organization/Team Table View](/img/attendance-organization-table.png)
 
-### Weekly Reports
-- Attendance patterns
-- Compliance metrics
-- Department attendance overview
-- Exception analysis
+**Key Features:**
 
-### Monthly Reports
-- Attendance trends
-- Leave analysis
-- Department performance
-- Cost analysis
+*   **Filtering:**
+    *   **Member Selection:** Use the dropdown (e.g., "All Members") to filter the view for specific individuals.
+    *   **Date Range:** Select a custom date range to analyze attendance for specific periods.
+*   **Attendance Table:** Displays a list of users with columns for:
+    *   **Name:** Employee's name (and potentially their role).
+    *   **Date:** The selected date range for the summary.
+    *   **Logged Hours:** Total hours the user was tracked as active during the period.
+    *   **Total Hours Expected:** The expected working hours for the user during the period based on their schedule.
+    *   **No of Holidays:** Number of holidays falling within the selected period for the user.
+    *   **No of Leaves:** Number of approved leave days taken by the user during the period.
+*   **Pagination:** Navigate through multiple pages if the list of users is long.
+*   **Download:** Option to download the attendance report.
 
-## Leave Management
+## Individual View
 
-### Leave Types
-- **Paid Leave**: Vacation, sick leave, personal days
-- **Unpaid Leave**: Extended absence, sabbatical
-- **Special Leave**: Bereavement, jury duty, military service
-- **Work from Home**: Remote work tracking
+This view provides a detailed look at a single employee's attendance, including a monthly calendar breakdown.
 
-### Leave Requests
-- **Request Submission**: Digital leave application
-- **Approval Workflow**: Multi-level approval process
-- **Leave Calendar**: Visual calendar of team availability
-- **Leave Balance**: Track remaining leave days
+![Attendance - Individual Calendar View](/img/attendance-individual-calendar.png)
 
-### Leave Reports
-- Leave utilization
-- Leave patterns
-- Department coverage
-- Cost impact
+**Key Features:**
 
-## Compliance Features
+*   **Summary Bar:** Shows the Logged Hours, Expected Hours, Holidays, and Leaves specifically for the selected individual and date range.
+*   **Monthly Calendar:**
+    *   Displays a standard calendar layout for the selected month (e.g., "April 2025").
+    *   **Color Coding:** Days are color-coded to indicate status:
+        *   **Green:** Present / Working Day
+        *   **Red:** On Leave
+    *   **Navigation:** Arrows allow switching between months.
+    *   **(Potentially) Daily Details:** Clicking on a specific day might show more granular details like clock-in/out times (not shown in the screenshot, but typical functionality).
 
-### Labor Law Compliance
-- **Working Hours**: Monitor maximum working hours
-- **Break Requirements**: Ensure mandatory break compliance
-- **Overtime Rules**: Track overtime limits
-- **Leave Entitlements**: Manage statutory leave requirements
+## Attendance Overview Chart
 
-### Data Protection
-- **Secure Storage**: Encrypted attendance records
-- **Access Control**: Role-based access to attendance data
-- **Audit Trail**: Track all attendance-related changes
-- **Data Retention**: Compliance with data retention policies
+This chart provides a quick visualization of daily attendance trends, often shown on the main dashboard or within the attendance section.
 
-## Best Practices
+![Attendance Overview Bar Chart](/img/attendance-overview-chart.png)
 
-### For Administrators
-1. **Regular Review**: Monitor attendance reports daily
-2. **Policy Communication**: Clearly communicate attendance policies
-3. **Exception Management**: Handle attendance exceptions promptly
-4. **Compliance Monitoring**: Regular compliance checks
-5. **Team Communication**: Keep team informed of attendance policies
+**Key Features:**
 
-### For Employees
-1. **Punctuality**: Maintain regular attendance patterns
-2. **Break Management**: Follow scheduled break times
-3. **Leave Planning**: Plan leaves in advance
-4. **Overtime Communication**: Report overtime needs early
-5. **Policy Awareness**: Stay informed about attendance policies
+*   **Visualization:** A bar chart displaying the number of users present versus those on leave for each day over a recent period (e.g., the last 7 days).
+*   **User Count:** The Y-axis represents the number of users.
+*   **Date:** The X-axis shows the specific dates.
+*   **Legend:** Clearly indicates which color represents "Present" (e.g., green) and "On Leave" (e.g., red).
+*   **Navigation:** Arrows may allow scrolling through different date ranges.
 
-## Integration Features
-
-### Payroll Integration
-- Automatic attendance data export
-- Overtime calculation
-- Leave balance updates
-- Cost center allocation
-
-### HR System Integration
-- Employee data synchronization
-- Leave management integration
-- Policy enforcement
-- Reporting integration
-
-### Mobile App Features
-- Mobile clock in/out
-- Leave request submission
-- Attendance status check
-- Break management
-- Location verification 
+This detailed attendance tracking helps ensure accurate records, monitor team availability, and manage leaves effectively.
