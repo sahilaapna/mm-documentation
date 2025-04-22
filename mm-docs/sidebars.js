@@ -46,21 +46,13 @@ const sidebars = {
     {
       type: 'category',
       label: 'Member Management',
-      items: [
-        'member-management/member-management-adding',
-        'member-management/member-management-bulk-upload',
-        'member-management/member-management-invitations',
-      ],
+      items: ['member-management/member-management-overview'],
       collapsed: true,
     },
     {
       type: 'category',
       label: 'Department Management',
-      items: [
-        'department-management/department-management-overview',
-        'department-management/department-management-creating',
-        'department-management/department-management-administration',
-      ],
+      items: ['department-management/department-management-overview'],
       collapsed: true,
     },
     {
@@ -71,6 +63,7 @@ const sidebars = {
         'configuration/configuration-user-default',
         'configuration/configuration-cloud',
         'configuration/configuration-bulk-update',
+        'configuration/configuration-history',
       ],
       collapsed: true,
     },

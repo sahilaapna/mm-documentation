@@ -4,41 +4,56 @@ title: General Settings
 sidebar_position: 1
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # General Settings
 
-The General Settings section is the primary control panel for organization-wide monitoring configurations.
+This section allows administrators to configure organization-wide settings for monitoring, time tracking, and activity levels.
 
-## Screenshot Settings
+<Tabs groupId="general-settings">
+  <TabItem value="setting" label="Setting" default>
 
-*   **Screenshot Interval:** Configure how frequently screenshots are captured (e.g., 1–100 minutes).
-*   **Screenshot Blur Effect:** Apply a blur level to screenshots for privacy (e.g., 0 for none, up to 3 for maximum blur).
+    Configure core monitoring parameters for the entire organization.
 
-## Activity Monitoring
+    ![General Settings - Setting Tab](/img/config-general-settings.png)
 
-*   **Capture Keyboard/Mouse Stroke Interval:** Set the frequency for recording keyboard/mouse activity data (e.g., 10–60 minutes).
-*   **Idle Time Settings:**
-    *   **Idle Time Interval:** Define the duration of inactivity before a user is marked idle (e.g., 5–100 minutes).
-    *   **Idle Time Alert:** Set a threshold for triggering an alert after a period of idle time (e.g., 0–100 minutes).
-    *   **Active User Duration:** Specify the interval for checking user activity (e.g., 10–60 minutes).
+    **Configuration Options:**
 
-## Session Management
+    *   **Screenshot Interval (min):** Use the slider to set how often screenshots are taken (1 to 100 minutes).
+    *   **Screenshot Blur Effect:** Control the level of blur applied to screenshots for privacy (slider from 0=None to 3=Max).
+    *   **Capture Keyboard Mouse Stroke (min):** Set the interval for capturing activity levels based on keyboard/mouse input (slider from 10 to 60 minutes).
+    *   **Idle Time Interval (min):** Define how long a user must be inactive before being marked as idle (slider from 5 to 100 minutes).
+    *   **Idle Time Alert (min):** Set the duration of idle time after which an alert is triggered (slider from 0=Off to 100 minutes).
+    *   **Session Expiry (Days):** Determine how many days a user's login session remains valid (slider from 1 to 100 days).
+    *   **Cut Off Time (hh:mm:ss):** Set the time when the system resets daily tracking data (e.g., 00:00:00 for midnight).
+    *   **Time Zone:** Select the organization's primary time zone from the dropdown (e.g., India Standard Time).
+    *   **Attendance Hours Per Day (hh:mm:ss):** Define the standard expected working hours per day (e.g., 08:00:00).
+    *   **Working Days Per Week (Days):** Check the boxes for the days considered official workdays.
+    *   **Start Stop Mail Alert:** Toggle switch to enable/disable email notifications when users start or stop the tracking agent.
 
-*   **Session Expiry:** Determine how long user sessions remain active (e.g., 1–100 days).
-*   **Recording Capture Duration:** Set the length of continuous recording segments (e.g., 5–30 minutes).
+    :::tip
+    Remember to click the **Update** button at the bottom to save any changes made on this tab.
+    :::
 
-## Time and Attendance
+  </TabItem>
+  <TabItem value="activity" label="Activity Level">
 
-*   **Cut Off Time:** Define the daily time for resetting tracking data (HH:MM:SS format).
-*   **Time Zone:** Set the organization's default time zone (e.g., IST).
-*   **Attendance Hours Per Day:** Specify the expected number of working hours per day.
-*   **Working Days Per Week:** Select the official working days for the organization.
+    Define thresholds for categorizing user activity levels based on keyboard/mouse input frequency, often visualized in reports and dashboards.
 
-## Notifications
+    ![General Settings - Activity Level Tab](/img/config-activity-level.png)
 
-*   **Start/Stop Mail Alert:** Enable or disable email notifications for users starting or stopping monitoring.
+    **Configuration:**
 
-![Screenshot: General Settings](/img/add-department.png)
+    *   **Ranges:** Define percentage ranges for different activity levels.
+        *   Enter the lower and upper bounds for each level (e.g., 0 &lt;= 20 for low/red, 21 &lt;= 40 for medium/yellow).
+        *   The system uses these ranges to assign a color indicator.
+    *   **Add Color +:** Click to add a new activity level range and assign its color.
+    *   **Delete (X):** Click the 'X' next to a range to remove it.
 
-:::tip
-Always click **Update** or **Save** to apply your changes!
-:::
+    :::tip
+    Click the **Update** button to save your activity level configuration.
+    :::
+
+  </TabItem>
+</Tabs>

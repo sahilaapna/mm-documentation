@@ -6,31 +6,26 @@ sidebar_position: 2
 
 # User Default Settings
 
-These settings allow administrators to configure default monitoring and privacy options for individual users or groups.
+These settings define the default monitoring configurations that will be applied to **newly added users**. Existing users' settings must be managed individually or via bulk updates.
 
-## Monitoring Features
+![User Default Settings](/img/config-user-defaults.png)
 
-Control specific monitoring aspects:
+**User Configuration Options:**
 
-*   **Capture Screenshot:** Enable or disable screenshot capture for users.
-*   **View Screenshot:** Determine who has permission to view captured screenshots (e.g., admins, managers).
-*   **Live Monitoring:** Enable or disable live screen streaming and recording capabilities.
-*   **Monitoring Toggle:** A master switch to enable or disable all monitoring features for the user.
+Use the toggle switches to enable (purple) or disable (grey) the default settings for new users:
 
-## Privacy and Security
+*   **Capture Screenshot:** Enable/disable automatic screenshot capture.
+*   **Live Stream:** Enable/disable live screen viewing capabilities for managers/admins.
+*   **Monitoring:** Master toggle for enabling/disabling all activity monitoring.
+*   **Stealth Mode:** If enabled, the tracking agent runs silently without visible notifications or tray icons on the user's machine.
+*   **Notification:** Enable/disable user notifications related to monitoring status.
+*   **Stop Timer Enable:** Allow/disallow users from manually pausing the activity timer.
+*   **Work Mode:** (Purpose needs clarification - likely relates to tracking specific work schedules or modes).
+*   **View Screenshots:** Allow/disallow users from viewing their own captured screenshots.
+*   **Personal System:** (Purpose needs clarification - might relate to tracking on personal vs. company devices).
 
-Configure user-facing privacy options:
+:::caution Important
+These configurations only apply to **newly added users**. Changes saved here do not affect existing users.
+:::
 
-*   **Stealth Mode:** If enabled, hides the monitoring agent icon and notifications from the user's system.
-*   **Private Mode:** Allows users to temporarily pause monitoring for privacy (e.g., during breaks).
-*   **Notification:** Controls whether users receive notifications about their monitoring status.
-
-## Time Management
-
-*   **Stop Timer Enable:** Allows users to manually pause the activity timer.
-
-![Screenshot: User Default Settings](/img/add-department.png)
-
-:::note
-Setting interfaces often use visual indicators like toggles (e.g., purple for enabled, grey for disabled) to show the status of each option.
-::: 
+Click the **Save** button to apply these default settings. 

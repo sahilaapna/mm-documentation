@@ -30,6 +30,90 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
+  // Configure Algolia DocSearch for reliable search suggestions
+  // Sign up at https://docsearch.algolia.com/ to get your credentials
+  themeConfig: {
+    algolia: {
+      appId: 'YOUR_APP_ID',
+      apiKey: 'YOUR_SEARCH_API_KEY',
+      indexName: 'mm-documentation',
+      contextualSearch: true,
+      // Optional: see https://docusaurus.io/docs/search#contextual-search
+    },
+    // Replace with your project's social card
+    image: 'img/docusaurus-social-card.jpg',
+    navbar: {
+      title: 'Mera Monitor',
+      logo: {
+        alt: 'Mera Monitor Logo',
+        src: 'img/logo.svg',
+        href: undefined,
+      },
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Documentation',
+        },
+      ],
+    },
+    // No Algolia configuration to prevent errors
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Documentation',
+              to: '/docs/intro',
+            },
+            {
+              label: 'Support',
+              to: '/docs/support',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/meramonitor',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discordapp.com/invite/meramonitor',
+            },
+            {
+              label: 'X',
+              href: 'https://x.com/meramonitor',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/sahilaapna/mm-documentation', // NEW repo URL
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Mera Monitor, Inc. Built with Docusaurus.`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  },
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -71,89 +155,6 @@ const config = {
       }),
     ],
   ],
-
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'Mera Monitor',
-        logo: {
-          alt: 'Mera Monitor Logo',
-          src: 'img/logo.svg',
-          href: undefined,
-        },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Documentation',
-          },
-          {
-            to: '/search',
-            position: 'right',
-            label: 'Search',
-            className: 'navbar-search-link',
-          },
-        ],
-      },
-      // No Algolia configuration to prevent errors
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Documentation',
-                to: '/docs/intro',
-              },
-              {
-                label: 'Support',
-                to: '/docs/support',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/meramonitor',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/meramonitor',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/meramonitor',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/sahilaapna/mm-documentation', // NEW repo URL
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Mera Monitor, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
 };
 
 export default config;
