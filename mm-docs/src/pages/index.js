@@ -12,15 +12,16 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+        <img src="/img/logo.svg" alt="Mera Monitor Logo" width="150" style={{ marginBottom: '1rem' }} />
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Unlock Your Team's Potential with {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Get Started
+            Explore Documentation - 5min ⏱️
           </Link>
         </div>
       </div>
@@ -32,8 +33,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} - ${siteConfig.tagline}`}
-      description="Comprehensive productivity tracking and monitoring solution for organizations">
+      title={`Welcome to ${siteConfig.title}`}
+      description="Unlock productivity insights with Mera Monitor. Explore our comprehensive documentation for configuration, features, and support.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

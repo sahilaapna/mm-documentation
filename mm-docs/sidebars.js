@@ -35,6 +35,14 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Implementation',
+      items: [
+        'implementation/implementation-guide',
+      ],
+      collapsed: false,
+    },
+    {
+      type: 'category',
       label: 'Features',
       items: [
         'features/dashboard-overview',
