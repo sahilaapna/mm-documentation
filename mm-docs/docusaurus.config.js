@@ -34,8 +34,8 @@ const config = {
   // Sign up at https://docsearch.algolia.com/ to get your credentials
   themeConfig: {
     algolia: {
-      appId: 'YOUR_APP_ID',
-      apiKey: 'YOUR_SEARCH_API_KEY',
+      appId: '3GT54619VH',
+      apiKey: '6098a89e2e73bfbbc22a054d55b6be44',
       indexName: 'mm-documentation',
       contextualSearch: true,
       // Optional: see https://docusaurus.io/docs/search#contextual-search
