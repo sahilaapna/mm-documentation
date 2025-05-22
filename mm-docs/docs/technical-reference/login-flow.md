@@ -44,8 +44,6 @@ This describes the process the Mera Monitor desktop application follows for user
 *   **Data Storage Events:** Writing data to memory, SQLite, and local folders.
 *   **Data Upload Events:** Transmitting data to the main database and cloud storage.
 
-![Screenshot: Login & Data Capture Flow Diagram](/img/add-department.png)
-
 :::tip
 The application is designed to ensure all captured data is securely uploaded before shutdown whenever possible.
 ::: 

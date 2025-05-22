@@ -36,8 +36,6 @@ The process often involves interacting with several local and server-side tables
 *   **User Key/Mouse Activity Tables:** Stores aggregated input activity counts.
 *   **User Daily Idle Activity Table:** Records detected periods of user idle time.
 
-![Screenshot: Data to Server Flow Diagram](/img/add-department.png)
-
 :::info Note
 Data processing might occur at set intervals or triggered by specific events (e.g., user logout, system shutdown) to ensure timely updates on the server.
 ::: 

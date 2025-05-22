@@ -34,9 +34,9 @@ const config = {
   // Sign up at https://docsearch.algolia.com/ to get your credentials
   themeConfig: {
     algolia: {
-      appId: '3GT54619VH',
-      apiKey: '6098a89e2e73bfbbc22a054d55b6be44',
-      indexName: 'mm-documentation',
+      appId: 'RCRFDAHKS4',
+      apiKey: '0cbf3b5764c2571abb09673b1462a0da',
+      indexName: 'sahilaapnaio',
       contextualSearch: true,
       // Optional: see https://docusaurus.io/docs/search#contextual-search
     },
@@ -55,6 +55,12 @@ const config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Documentation',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'apiSidebar',
+          position: 'left',
+          label: 'API Documentation',
         },
       ],
     },

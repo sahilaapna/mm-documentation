@@ -69,7 +69,6 @@ const sidebars = {
       items: [
         'configuration/configuration-general',
         'configuration/configuration-user-default',
-        'configuration/configuration-cloud',
         'configuration/configuration-bulk-update',
         'configuration/configuration-history',
       ],
@@ -92,6 +91,20 @@ const sidebars = {
         'technical-reference/tech-ref-login-flow',
       ],
       collapsed: true,
+    },
+  ],
+
+  // API Documentation sidebar
+  apiSidebar: [
+    {
+      type: 'doc',
+      id: 'getting-started',
+      label: 'Getting Started',
+    },
+    {
+      type: 'doc',
+      id: 'api-documentation',
+      label: 'API Reference',
     },
   ],
 

@@ -37,7 +37,5 @@ The report typically displays data in a table format with columns like:
 | Productive/Unproductive | The classification assigned to the website/application (Productive/Unproductive).|
 | Action                | May include options to view more detailed usage or reclassify the item.   |
 
-![Screenshot: Websites & Applications Report](/img/add-department.png)
-
 **Why is this report important?**
 It helps identify which tools are being used most frequently, highlights potential time-wasting activities or websites, and informs decisions about software licensing or blocking non-essential sites. 

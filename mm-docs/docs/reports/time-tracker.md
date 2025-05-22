@@ -42,7 +42,5 @@ The report usually tracks the following time categories:
 | Away Time        | Time manually marked as 'away' by the user (if feature enabled).|
 | Total Hours      | The sum of all tracked time categories for the selected period.|
 
-![Screenshot: Time Tracker Report](/img/add-department.png)
-
 **How to Use:**
 Utilize the Organization View to identify overall team trends, work patterns, and potential productivity issues. Use the Individual View for performance reviews, coaching sessions, and helping members manage their time effectively.
