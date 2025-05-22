@@ -16,35 +16,44 @@ Before you begin, make sure you have:
 
 ### Step 1: Access API Settings
 1. Log in to your Mera Monitor dashboard
-2. Navigate to Settings > API Integration
-3. Click on "Generate New API Credentials"
+2. Navigate to Configuration > API Credentials
+3. You will see your existing API credentials if they have been generated
 
-### Step 2: Configure API Access
-1. Enter a name for your API integration (e.g., "Production Integration")
-2. Select the required permissions for your integration
-3. Click "Generate Credentials"
+### Step 2: Generate API Credentials
+If you haven't generated API credentials yet:
+1. Click on "Generate API Credentials" button
+2. The system will automatically generate:
+   - Client ID
+   - Client Secret
 
-### Step 3: Save Your Credentials
-After generation, you'll receive:
-- Client ID
-- Client Secret
+**Important Notes:**
+- Each organization can only have one set of API credentials
+- The generated credentials will not expire
+- The client secret will only be shown once during generation
+- Store these credentials securely as they will be used for all API integrations
 
-**Important**: Store these credentials securely. The client secret will only be shown once.
+### Step 3: View and Manage Credentials
+Once generated, you can:
+1. View your Client ID at any time
+2. Regenerate the Client Secret if needed (this will invalidate the previous secret)
+3. Copy the credentials for use in your applications
+
+## Using API Credentials
+
+To use the API credentials:
+1. Include the Client ID and Client Secret in your authentication requests
+2. Use the generated access token in the Authorization header for all API calls
+3. Follow the [API Documentation](/docs/api-documentation) for detailed endpoint information
 
 ## Best Practices
 
 1. **Security**
    - Never share your client secret
    - Store credentials securely
-   - Rotate credentials periodically
    - Use environment variables for credentials
+   - Implement proper error handling for authentication failures
 
-2. **Token Management**
-   - Access tokens expire after 30 days
-   - Implement token refresh logic
-   - Handle token expiration gracefully
-
-3. **Rate Limiting**
+2. **API Usage**
    - Monitor your API usage
    - Implement proper error handling
    - Use appropriate retry mechanisms
@@ -54,11 +63,11 @@ After generation, you'll receive:
 Now that you have your API credentials, you can:
 1. Review the [API Documentation](/docs/api-documentation) for available endpoints
 2. Start making API calls to integrate with Mera Monitor
-3. Set up webhooks for real-time updates
+3. Test your integration using the provided endpoints
 
 ## Support
 
 If you need help:
 - Check our [API Documentation](/docs/api-documentation)
-- Contact our support team at support@meramonitor.com
-- Visit our [Support Portal](https://support.meramonitor.com) 
+- Contact our support team
+- Visit our Support Portal 
