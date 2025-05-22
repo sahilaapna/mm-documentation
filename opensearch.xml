@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Mera Monitor</ShortName>
+  <Description>Search Mera Monitor</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://sahilaapna.github.io/mm-documentation/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://sahilaapna.github.io/mm-documentation/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://sahilaapna.github.io/mm-documentation/opensearch.xml" />
+  <moz:SearchForm>https://sahilaapna.github.io/mm-documentation/</moz:SearchForm>
+</OpenSearchDescription>
