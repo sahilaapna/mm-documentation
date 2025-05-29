@@ -43,11 +43,10 @@ const config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Mera Monitor',
       logo: {
         alt: 'Mera Monitor Logo',
         src: 'img/logo.svg',
-        href: undefined,
+        href: 'https://meramonitor.com',
       },
       items: [
         {
@@ -67,52 +66,7 @@ const config = {
     // No Algolia configuration to prevent errors
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Documentation',
-              to: '/docs/intro',
-            },
-            {
-              label: 'Support',
-              to: '/docs/support',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/meramonitor',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/meramonitor',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/meramonitor',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/sahilaapna/mm-documentation', // NEW repo URL
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Mera Monitor, Inc. Built with Docusaurus.`,
+      copyright: '© Copyright 2025 Mera Monitor. All rights reserved.',
     },
     prism: {
       theme: prismThemes.github,

@@ -388,3 +388,8 @@ a:hover {
 .button:active {
   transform: translateY(0px);
 }
+
+/* Custom footer styling */
+.footer {
+  background-color: #080D1F !important;
+}
