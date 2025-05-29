@@ -9,7 +9,7 @@ This section provides detailed information about the API endpoints, request para
 ## Base URL
 
 ```
-https://devintegrationapi.meramonitor.com
+https://clientapi.meramonitor.com
 ```
 
 ## Authentication

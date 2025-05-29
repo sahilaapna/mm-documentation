@@ -27,7 +27,7 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 
 ## Base URL
 ```
-https://api.meramonitor.com/v1
+https://clientapi.meramonitor.com/v1
 ```
 
 ## Endpoints

@@ -53,7 +53,7 @@ const config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'User Guide',
         },
         {
           type: 'docSidebar',
