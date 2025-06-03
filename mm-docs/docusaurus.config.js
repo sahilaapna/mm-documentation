@@ -40,12 +40,13 @@ const config = {
       contextualSearch: true,
       // Optional: see https://docusaurus.io/docs/search#contextual-search
     },
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    // Replace with your project's social card - using Mera Monitor branding
+    image: 'img/logo-light.svg',
     navbar: {
       logo: {
         alt: 'Mera Monitor Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo-light.svg',        // Logo for light theme
+        srcDark: 'img/logo-dark.svg',     // Logo for dark theme
         href: 'https://meramonitor.com',
       },
       items: [

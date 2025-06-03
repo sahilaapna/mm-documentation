@@ -15,7 +15,7 @@ Before you begin, make sure you have:
 ## Generating API Credentials
 
 ### Step 1: Access API Settings
-1. Log in to your Mera Monitor dashboard
+1. Log in to your [Mera Monitor dashboard](https://app.meramonitor.com)
 2. Navigate to Configuration > API Credentials
 3. You will see your existing API credentials if they have been generated
 

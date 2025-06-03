@@ -35,7 +35,6 @@ application/x-www-form-urlencoded
 | redirect_uri | string | Yes | Must be "urn:ietf:wg:oauth:2.0:oob" |
 | client_id | string | Yes | OAuth client ID |
 | client_secret | string | Yes | OAuth client secret |
-| Email | string | Yes | AdminEmail |
 
 #### Sample Request
 ```http
@@ -80,7 +79,6 @@ Query string parameters (mapped to a class)
 |-----------|------|----------|-------------|
 | FromDate | string | Yes | Format "YYYY-MM-DD" |
 | ToDate | string | Yes | Format "YYYY-MM-DD" |
-| Email | string | Yes | Optional – provide to filter data for a specific user |
 
 #### Authorization Header
 ```
@@ -89,7 +87,7 @@ Authorization: Bearer {access_token}
 
 #### Sample Request
 ```http
-GET /api/attendance/checkincheckout/user?Email=xxxx@yopmail.com&FromDate=2024-08-23&ToDate=2024-08-23
+GET /api/attendance/checkincheckout/user?FromDate=2024-08-23&ToDate=2024-08-23
 Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
 ```
 
