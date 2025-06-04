@@ -34,7 +34,7 @@ If you haven't generated API credentials yet:
 ### Step 3: Generate Access Token
 Once you have your Client ID and Secret Key, you can generate an access token directly in the dashboard:
 
-1. **In the Client Credential screen**, locate the "Access Token" section
+1. **In the Client Credential screen**
 2. **Click "Generate Token"** button in the UI
 3. **Copy the generated access token** that appears in the interface
 4. **Store the token securely** for use in your API integrations
@@ -45,7 +45,7 @@ Once you have your Client ID and Secret Key, you can generate an access token di
    ```http
    Authorization: Bearer YOUR_ACCESS_TOKEN
    ```
-- Tokens have a 60-minute expiration time - check the dashboard for token validity
+- Tokens have a 60-minute expiration time
 - Generate new tokens through the dashboard interface when needed
 - Never share your access tokens publicly
 
